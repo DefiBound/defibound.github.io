@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './index.module.css'
+import { ConnectButton } from '@mysten/dapp-kit';
 const index = () => {
     return (
         <div className={style.container}>
@@ -55,6 +56,7 @@ const index = () => {
                     </svg>
                 </div>
             </button>
+            <ConnectButton style={{marginLeft:'20px'}}/>
         </div>
     )
 }
