@@ -1,29 +1,27 @@
 import React from 'react'
-import { Select, Space } from 'antd';
+import { Select, Space , Input} from 'antd';
+import style from './index.module.css'
 const index = () => {
   const handleChange = (value) => {
     console.log(`selected ${value}`);
   };
+
+  const {Search} = Input
+  const onSearch = (value, _e, info) => console.log(info?.source, value);
   return (
-    <div>
+    <div className={style.container}>
       <Space wrap>
+        <span className={style.kind}>kinds:</span>
         <Select
-          defaultValue="lucy"
+          defaultValue="NFT"
           style={{ width: 120 }}
           onChange={handleChange}
           options={[
-            { value: 'jack', label: 'Jack' },
-            { value: 'lucy', label: 'Lucy' },
-            { value: 'Yiminghe', label: 'yiminghe' },
-            { value: 'disabled', label: 'Disabled', disabled: true },
+            { value: 'NFT', label: 'NFT' },
+            { value: 'contract ownership', label: 'contract ownership' },
           ]}
         />
-        <Select
-          defaultValue="lucy"
-          style={{ width: 120 }}
-          allowClear
-          options={[{ value: 'lucy', label: 'Lucy' }]}
-        />
+        <Search placeholder="input wrapper alias" onSearch={onSearch} style={{ width: 200 }} />
       </Space>
     </div>
   )

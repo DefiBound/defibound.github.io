@@ -1,12 +1,14 @@
 import React from 'react'
 import style from './index.module.css'
 import { ConnectButton } from '@mysten/dapp-kit';
+import Image from 'next/image';
+
 const index = () => {
     return (
         <div className={style.container}>
-            <span>DEFIBOUNCE</span>
+            <Image src='logo.jpg' width={100} height={100}></Image>
             <button className={style.cssbuttons_io_button}>
-                Get started
+                My Wrapper
                 <div className={style.icon}>
                     <svg
                         height="24"
