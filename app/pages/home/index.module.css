@@ -101,10 +101,10 @@
 
   @font-face{
     font-family: 'logo';
-    src: url('../../public/logo.ttf')
+    src: url('../../../public/logo.ttf')
   }
 
   @font-face{
     font-family: 'intro';
-    src: url('../../public/intro.ttf')
+    src: url('../../../public/intro.ttf')
   }

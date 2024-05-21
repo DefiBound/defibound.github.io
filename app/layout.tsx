@@ -24,7 +24,7 @@ export default function RootLayout({
           <html>
             <body style={{ margin: 0 }}>
               <Nav></Nav>
-              {children}
+                {children}
             </body>
           </html>
         </WalletProvider>

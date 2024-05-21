@@ -5,9 +5,9 @@ const index = () => {
     return (
         <div className={style.container}>
             <span>DEFIBOUNCE</span>
-            <button class={style.cssbuttons_io_button}>
+            <button className={style.cssbuttons_io_button}>
                 Get started
-                <div class={style.icon}>
+                <div className={style.icon}>
                     <svg
                         height="24"
                         width="24"
@@ -22,9 +22,9 @@ const index = () => {
                     </svg>
                 </div>
             </button>
-            <button class={style.cssbuttons_io_button}>
+            <button className={style.cssbuttons_io_button}>
                 Get started
-                <div class={style.icon}>
+                <div className={style.icon}>
                     <svg
                         height="24"
                         width="24"
@@ -39,9 +39,9 @@ const index = () => {
                     </svg>
                 </div>
             </button>
-            <button class={style.cssbuttons_io_button}>
+            <button className={style.cssbuttons_io_button}>
                 Get started
-                <div class={style.icon}>
+                <div className={style.icon}>
                     <svg
                         height="24"
                         width="24"
