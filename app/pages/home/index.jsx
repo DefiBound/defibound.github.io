@@ -2,8 +2,6 @@ import React, { useEffect } from 'react'
 import styles from './index.module.css'
 import Image from 'next/image'
 function Home() {
-  
-
   return (
     <div className={styles.container}>
       <div>

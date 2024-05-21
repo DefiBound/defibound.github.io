@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 const DraggableComponent = ({ children }) => {
-    const [position, setPosition] = useState({ x: 20, y: 20 })
+    const [position, setPosition] = useState({ x: 0, y: 0 })
     const [initialPosition, setInitialPosition] = useState({ x: 0, y: 0 })
     const [moveable, setMoveable] = useState(false)
     const onMouseDown = (e) => {
@@ -31,7 +31,6 @@ const DraggableComponent = ({ children }) => {
                 left: position.x,
                 position: 'absolute',
                 cursor: moveable ? 'grabbing' :'grab',
-                border: 'solid black'
             }}
             onMouseDown={onMouseDown}
             onMouseMove={onMouseMove}
