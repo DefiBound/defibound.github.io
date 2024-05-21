@@ -1,0 +1,110 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    margin: auto;
+    align-items: center;
+}
+
+.tittle{
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'logo';
+}
+
+.card {
+    width: 350px;
+    height: 200px;
+    background: rgb(183, 226, 25);
+    font-family: inherit;
+    position: relative;
+    margin: 15px 0;
+    border-radius: 8px;
+  }
+  
+  .quote {
+    color: rgb(223, 248, 134);
+    padding-left: 90px;
+    top: 30px;
+    position: relative;
+  }
+  
+  .card_name {
+    text-transform: uppercase;
+    font-weight: 1000;
+    color: rgb(127, 155, 29);
+    font-size: 23px;
+    padding: 20px;
+    line-height: 23px;
+  }
+  
+  .set {
+    font-size: 17px;
+    font-weight: 900;
+    width: 120px;
+    height: 80px;
+    color: #465512;
+    position: absolute;
+    background-color: white;
+    top: 60px;
+    left: 30px;
+    border-radius: 10px;
+    line-height: 23px;
+    opacity: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .total {
+    font-size: 17px;
+    font-weight: 900;
+    width: 140px;
+    height: 80px;
+    color: #465512;
+    position: absolute;
+    background-color: white;
+    top: 60px;
+    left: 180px;
+    border-radius: 10px;
+    line-height: 23px;
+    opacity: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .set_text{
+    margin: auto;
+  }
+
+  .alias{
+    border-radius:8px;
+    width: 80px;
+    margin: auto;
+    /* width: 20px; */
+  }
+
+  .about{
+    font-size: 23px;
+    font-weight: 600;
+    margin: 10px 0;
+    font-family: 'logo';
+  }
+
+  .intro{
+    width:350px
+  }
+
+  .introduction{
+    font-family: 'intro';
+  }
+
+  @font-face{
+    font-family: 'logo';
+    src: url('../../../public/logo.ttf')
+  }
+
+  @font-face{
+    font-family: 'intro';
+    src: url('../../../public/intro.ttf')
+  }
