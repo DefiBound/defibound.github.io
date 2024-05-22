@@ -2,8 +2,6 @@ import React, { useEffect } from 'react'
 import styles from './index.module.css'
 import Image from 'next/image'
 function Home() {
-  
-
   return (
     <div className={styles.container}>
       <div>
@@ -30,7 +28,7 @@ function Home() {
           <span className={styles.introduction}>Create a new SuiFren by mixing two Capybaras or two Bullsharks from your wallet.Create a new SuiFren by mixing two Capybaras or two Bullsharks from your wallet.</span>
         </div>
       </div>
-      <Image src='image.png' width={250} height={250}></Image>
+      <Image src='image.png' width={250} height={250} alt='img'></Image>
     </div>
   )
 }

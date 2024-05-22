@@ -21,8 +21,8 @@ export default function RootLayout({
     <QueryClientProvider client={queryClient}>
       <SuiClientProvider networks={networkConfig} defaultNetwork="localnet">
         <WalletProvider>
-          <html>
-            <body style={{ margin: 0 }}>
+          <html >
+            <body style={{ margin: 0 , height:'100vh' , display:'flex' , flexDirection:'column'}}>
               <Nav></Nav>
                 {children}
             </body>
