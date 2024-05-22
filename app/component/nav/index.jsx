@@ -2,12 +2,13 @@ import React from 'react'
 import style from './index.module.css'
 import { ConnectButton } from '@mysten/dapp-kit';
 import Image from 'next/image';
-
+import { useRouter } from 'next/navigation';
 const index = () => {
+    const router = useRouter()
     return (
         <div className={style.container}>
-            <Image src='logo.jpg' width={100} height={100}></Image>
-            <button className={style.cssbuttons_io_button}>
+            <Image src='icon.png' width={70} height={63} alt='img'></Image>
+            <button className={style.cssbuttons_io_button} onClick={()=>{router.push('/myWrapper')}}>
                 My Wrapper
                 <div className={style.icon}>
                     <svg

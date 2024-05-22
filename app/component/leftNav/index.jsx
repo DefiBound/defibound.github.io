@@ -6,7 +6,10 @@ const index = () => {
     return (
         <div className={style.container}>
             <DragableComp>
-                <Image src='logo.jpg' layout='responsive' width={100} height={100} draggable='false'></Image>
+                <Image src='icon.png' style={{width:'50%'}} width={100} height={100} draggable='false' alt='img'></Image>
+            </DragableComp>
+            <DragableComp>
+                <Image src='icon.png' style={{width:'50%'}} width={100} height={100} draggable='false' alt='img'></Image>
             </DragableComp>
         </div>
     )
